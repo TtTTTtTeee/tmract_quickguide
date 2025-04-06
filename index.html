@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TMR Flooded Roads & DRFA Activations - Quick Guide</title>
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f7f9fc;
+            }
+
+            .header {
+                background-color: #0056b3;
+                color: white;
+                padding: 20px;
+                border-radius: 8px 8px 0 0;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            h1 {
+                margin: 0;
+            }
+
+            h2 {
+                color: #0056b3;
+                border-bottom: 2px solid #0056b3;
+                padding-bottom: 5px;
+                margin-top: 30px;
+            }
+
+            h3 {
+                color: #0078d4;
+            }
+
+            .section {
+                background-color: white;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .screenshot {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                margin: 15px 0;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .screenshot-container {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .caption {
+                font-style: italic;
+                color: #666;
+                margin-top: 5px;
+                font-size: 0.9em;
+            }
+
+            .tip {
+                background-color: #e9f7ff;
+                border-left: 4px solid #0078d4;
+                padding: 10px 15px;
+                margin: 15px 0;
+            }
+
+            .tip-title {
+                font-weight: bold;
+                color: #0078d4;
+                margin-bottom: 5px;
+                display: block;
+            }
+
+            ul,
+            ol {
+                padding-left: 25px;
+            }
+
+            li {
+                margin-bottom: 5px;
+            }
+
+            footer {
+                text-align: center;
+                margin-top: 30px;
+                padding: 10px;
+                font-size: 0.8em;
+                color: #666;
+            }
+
+            .navigation-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .navigation-text {
+                flex: 1;
+                min-width: 300px;
+                padding-right: 20px;
+            }
+
+            .navigation-image {
+                flex: 1;
+                min-width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>TMR Flooded Roads & DRFA Activations</h1>
+            <p>Quick Guide</p>
+        </div>
+
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>
+                This web application provides information about flooded roads in Queensland and Disaster Recovery Funding Arrangements (DRFA)
+                activations. It allows users to view both current and historical flood data, filter information based on various criteria, and access
+                detailed information about affected road networks.
+            </p>
+
+            <div class="screenshot-container">
+                <img src="./img/overview.jpg" alt="Application Overview" class="screenshot" />
+                <p class="caption">Fig. 1: Overview of the TMR Flooded Roads & DRFA Activations application</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Navigation</h2>
+
+            <h3>Main Tabs</h3>
+            <div class="navigation-section">
+                <div class="navigation-text">
+                    <p>At the top of the application, you'll find three main navigation buttons:</p>
+                    <ul>
+                        <li><strong>Map</strong>: The default view showing the geographical representation of flooded roads</li>
+                        <li><strong>Table</strong>: Displays the data in tabular format for easier analysis</li>
+                        <li><strong>Quick Guide</strong>: Opens this guide with instructions on how to use the application</li>
+                    </ul>
+                </div>
+                <div class="navigation-image">
+                    <img src="./img/navigation.jpg" alt="Main Navigation Tabs" class="screenshot" />
+                    <p class="caption">Fig. 2: Main navigation tabs in the header</p>
+                </div>
+            </div>
+
+            <h3>Flood Data Toggle</h3>
+            <div class="navigation-section">
+                <div class="navigation-text">
+                    <p>Below the header, you can toggle between two views:</p>
+                    <ul>
+                        <li><strong>Historic Flooded</strong>: Displays historical flood data records</li>
+                        <li><strong>Live Flooded</strong>: Shows current flooding situations (active by default)</li>
+                    </ul>
+                </div>
+                <div class="navigation-image">
+                    <img src="./img/toggle.jpg" alt="Flood Data Toggle" class="screenshot" />
+                    <p class="caption">Fig. 3: Toggle between Historic and Live flood data</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Map Interface</h2>
+
+            <h3>Search Function</h3>
+            <div class="navigation-section">
+                <div class="navigation-text">
+                    <p>To find specific locations:</p>
+                    <ul>
+                        <li>Use the search bar in the top-left corner to find specific addresses or places</li>
+                        <li>Click the magnifying glass icon to initiate the search</li>
+                    </ul>
+                </div>
+                <div class="navigation-image">
+                    <img src="./img/search.jpg" alt="Search Function" class="screenshot" />
+                    <p class="caption">Fig. 4: Search bar for finding specific locations</p>
+                </div>
+            </div>
+
+            <h3>Map Controls</h3>
+            <div class="navigation-section">
+                <div class="navigation-text">
+                    <p>On the right side of the map, you'll find navigation controls:</p>
+                    <ul>
+                        <li>Zoom in/out buttons (+/-)</li>
+                        <li>Home button to reset the map view</li>
+                        <li>Other tools for map manipulation and orientation</li>
+                    </ul>
+                </div>
+                <div class="navigation-image">
+                    <img src="./img/map_control.jpg" alt="Map Controls" class="screenshot" />
+                    <p class="caption">Fig. 5: Map navigation and zoom controls</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Filter Options</h2>
+            <p>The left panel provides comprehensive filtering capabilities to refine the data displayed on the map.</p>
+
+            <div class="screenshot-container">
+                <img src="./img/filter.jpg" alt="Filter Panel" class="screenshot" />
+                <p class="caption">Fig. 6: Filter panel with various filter options</p>
+            </div>
+
+            <p>Available filters include:</p>
+            <ul>
+                <li><strong>Last updated is between</strong>: Select date ranges using the calendar icons</li>
+                <li><strong>Local government</strong>: Filter by specific local government areas</li>
+                <li><strong>Locality</strong>: Filter by specific localities or suburbs</li>
+                <li><strong>Event priority</strong>: Filter by high, medium, or low priority events</li>
+                <li><strong>Road name</strong>: Filter by specific road names</li>
+            </ul>
+
+            <div class="tip">
+                <span class="tip-title">TIP</span>
+                After selecting your filters, remember to click the <strong>Apply</strong> button to update the map view with your criteria.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Legend</h2>
+            <div class="navigation-section">
+                <div class="navigation-text">
+                    <p>The legend panel on the right side explains the map symbols. By default, three layers are visible as follows:</p>
+                    <ul>
+                        <li><strong>TMR Live Flooded Roads</strong>: Current flooding with priority indicators (high, medium, low)</li>
+                        <!-- <li><strong>TMR Flooded Roads in last 30 days</strong>: Recent flooding with priority indicators</li> -->
+                        <li><strong>Local Government Areas</strong>: Boundaries of local government regions</li>
+                        <li><strong>Active Activations 2024-2025</strong>: DRFA activations for the current period</li>
+                    </ul>
+                </div>
+                <div class="navigation-image">
+                    <img src="./img/legend.jpg" alt="Legend Panel" class="screenshot" />
+                    <p class="caption">Fig. 7: Legend explaining map symbols and colors</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Pie Chart</h2>
+            <div class="navigation-section">
+                <div class="navigation-text">
+                    <p>At the bottom of the screen, you'll find a summary of the current road situation:</p>
+                    <ul>
+                        <li>A pie chart showing the distribution of affected roads</li>
+                        <li>
+                            Some Key statistics including:
+                            <ul>
+                                <li>Total closures</li>
+                                <li>Lanes blocked</li>
+                                <li>Lanes affected</li>
+                                <li>Roads restricted</li>
+                                <li>No blockage</li>
+                                <li>N/A status roads</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigation-image">
+                    <img src="./img/pie_chart.jpg" alt="Pie Chart" class="screenshot" />
+                    <p class="caption">Fig. 8: Status overview with pie chart and statistics</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Tips for Effective Use</h2>
+            <div class="tip">
+                <span class="tip-title">Filtering Data</span>
+                Use the filter panel to narrow down information to specific areas of interest. This is particularly useful when investigating flooding
+                in specific regions.
+            </div>
+
+            <div class="tip">
+                <span class="tip-title">Viewing Historical Data</span>
+                Toggle between Historic and Live Flooded views depending on your research needs. Historical data can help identify patterns and
+                recurring flood-prone areas.
+            </div>
+
+            <div class="tip">
+                <span class="tip-title">Checking Data Currency</span>
+                Always check the Last Updated information to ensure you're viewing current data, especially during active flood events.
+            </div>
+
+            <div class="tip">
+                <span class="tip-title">Priority Focus</span>
+                Use the different priority indicators in the legend to focus on the most critical areas requiring immediate attention.
+            </div>
+
+            <div class="tip">
+                <span class="tip-title">Pop-ups - Detailed Information</span>
+                Click on specific road segments or a LGA highlighted with Yellow on the map to open a pop-up for detailed information.
+            </div>
+
+            <div class="screenshot-container">
+                <img src="./img/popups.jpg" alt="Interactive Map Example" class="screenshot" />
+                <p class="caption">Fig. 9: Example of clicking on an activation layer to view detailed information</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Data Sources</h2>
+            <p>
+                The application integrates data from multiple sources including ESRI, TomTom, Garmin, FAO, NOAA, USGS, the Department of Transport and
+                Main Roads, and Queensland Reconstruction Authority.
+            </p>
+
+            <div class="screenshot-container">
+                <img src="./img/layers.jpg" alt="Data Sources" class="screenshot" />
+                <p class="caption">Fig. 10: GIS Layers available in this application</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Queensland Reconstruction Authority</p>
+        </footer>
+    </body>
+</html>
